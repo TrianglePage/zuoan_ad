@@ -37,7 +37,8 @@ body {
 .page1_mid {
     border: solid 1px;
     height:50%;
-    background-image: url(../src/img/page_1_blue.jpg);
+    background-image: url(../src/img/blue_building.jpg);
+    background-size:100% 100%;
 }
 
 .page1_down {
@@ -45,10 +46,18 @@ body {
     height: 40%;
 }
 
-.page1_building_pic {
+.page_1_blue {
     height:95%;
     width:100%;
     position:relative;
     top: 5%;
+    left: 0px;
+    transition-property:left 2s linear 0s;
+    /* Firefox 4 */
+    -moz-transition:left 2s linear 0s;
+    /* Safari and Chrome */
+    -webkit-transition:left 2s linear 0s;
+    /* Opera */
+    -o-transition:left 2s linear 0s;
 }
 /************************** page1 end  *************************/
