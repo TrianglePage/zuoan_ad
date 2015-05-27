@@ -52,12 +52,5 @@ body {
     position:relative;
     top: 5%;
     left: 0px;
-    transition-property:left 2s linear 0s;
-    /* Firefox 4 */
-    -moz-transition:left 2s linear 0s;
-    /* Safari and Chrome */
-    -webkit-transition:left 2s linear 0s;
-    /* Opera */
-    -o-transition:left 2s linear 0s;
 }
 /************************** page1 end  *************************/

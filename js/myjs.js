@@ -22,11 +22,21 @@ function building_animate(index)
     if(index == 1)
     {
         setTimeout(function(){
+        $("#page_1_blue").css({
+            "transition-property":"left 2s linear 0s",
+            "-webkit-transition":"left 2s linear 0s",
+            "-moz-transition":"left 2s linear 0s",
+            "-o-transition":"left 2s linear 0s"});
             document.getElementById("page_1_blue").style.left = "400px";
-        }, 1000);
+        }, 500);
     }
     else
     {
+        $("#page_1_blue").css({
+            "transition-property":"left 0s linear 0s",
+            "-webkit-transition":"left 0s linear 0s",
+            "-moz-transition":"left 0s linear 0s",
+            "-o-transition":"left 0s linear 0s"});
         document.getElementById("page_1_blue").style.left = "0px";
     }
 
