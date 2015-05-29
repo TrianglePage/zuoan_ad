@@ -27,7 +27,7 @@ function building_animate(index)
             "-webkit-transition":"left 2s linear 0s",
             "-moz-transition":"left 2s linear 0s",
             "-o-transition":"left 2s linear 0s"});
-            document.getElementById("page_1_blue").style.left = "400px";
+            document.getElementById("page_1_blue").style.left = "100%";
         }, 500);
     }
     else
@@ -37,7 +37,12 @@ function building_animate(index)
             "-webkit-transition":"left 0s linear 0s",
             "-moz-transition":"left 0s linear 0s",
             "-o-transition":"left 0s linear 0s"});
-        document.getElementById("page_1_blue").style.left = "0px";
+        document.getElementById("page_1_blue").style.left = "0";
     }
 
 };
+
+function text_animate(index)
+{
+
+}

@@ -53,4 +53,47 @@ body {
     top: 5%;
     left: 0px;
 }
+
+.page1_text {
+    position: absolute;
+    color:white;
+}
+
+.text1{
+    top:15%;
+    left:10%;
+    font:italic 20px arial,sans-serif;
+}
+
+.text2{
+    top:30%;
+    left:15%;
+    font:italic 10px arial,sans-serif;
+}
+
+.text3{
+    top:40%;
+    left:40%;
+    font:italic 30px arial,sans-serif;
+}
+
+.text4{
+    top:30%;
+    left:60%;
+    font:italic 20px arial,sans-serif;
+}
+
+.text5{
+    color:black;
+    top:62%;
+    left:5%;
+}
+
+.text6{
+    color:red;
+    top:75%;
+    left:35%;
+    font-family: "Microsoft YaHei";
+    font-size: 28px;
+}
 /************************** page1 end  *************************/
