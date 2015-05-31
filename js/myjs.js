@@ -5,21 +5,23 @@ var mySwiper = new Swiper ('.swiper-container', {
     direction: 'vertical',
     mousewheelControl: true,
     watchSlidesProgress: true,
-    loop: true,
+    loop: false,
     onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
         swiperAnimateCache(swiper);
         swiperAnimate(swiper);
+        building_animate(swiper.activeIndex);
     },
     onTransitionEnd: function(swiper){
         //     alert("df");
         swiperAnimate(swiper);
         building_animate(swiper.activeIndex);
+        page2_white_bk_animation(swiper.activeIndex);
     }
 })
 
 function building_animate(index)
 {
-    if(index == 1)
+    if(index == 0)
     {
         setTimeout(function(){
         $("#page_1_blue").css({
@@ -39,10 +41,30 @@ function building_animate(index)
             "-o-transition":"left 0s linear 0s"});
         document.getElementById("page_1_blue").style.left = "0";
     }
-
 };
 
-function text_animate(index)
+function page2_white_bk_animation(index)
 {
-
+    if(index == 1)
+    {
+        setTimeout(function(){
+            $("#page2_white_bk").css({
+                "left": "26%",
+                "width": "60%",
+                "transition-property":"width 1s linear 0s, left 1s linear 0s",
+                "-webkit-transition":"width 1s linear 0s, left 1s linear 0s",
+                "-moz-transition":"width 1s linear 0s, left 1s linear 0s",
+                "-o-transition":"width 1s linear 0s, left 1s linear 0s"});
+        }, 500);
+    }
+    else
+    {
+        $("#page2_white_bk").css({
+            "left": "56%",
+            "width": "0%",
+            "transition-property":"width 0s linear 0s, left 0s linear 0s",
+            "-webkit-transition":"width 0s linear 0s, left 0s linear 0s",
+            "-moz-transition":"width 0s linear 0s, left 0s linear 0s",
+            "-o-transition":"width 0s linear 0s, left 0s linear 0s"});
+    }
 }

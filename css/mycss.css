@@ -12,20 +12,20 @@ body {
     background: #eee;
     width: 100%;
     height: 100%;
-    border: solid 1px;
+    /*border: solid 1px;*/
 }
 
 .swiper-container {
     width: 100%;
     height: 100%;
-    border: solid 1px;
+    /*border: solid 1px;*/
 }
 
 .swiper-slide {
     width: 100%;
     height: 100%;
     text-align: center;
-    border: solid 1px;
+   /* border: solid 1px;*/
 }
 
 /************************** page1 start*************************/
@@ -110,7 +110,7 @@ body {
 
 .page2_content
 {
-	position:absolute;
+	position:relative;
 	top:0px;
 	left:0px;
 	width: 100%;
@@ -122,28 +122,29 @@ body {
 	background-positon: 100%, 100%; 
 	background-repeat:no-repeat;
 	z-index:1;
+    overflow: hidden;
 }
 
 .zuoan_logo
 {
 	width: 20%;
 	height: 6%;
-	position:relative;	
+	position:relative;
 	top:5%;
 	left:-30%;
 	z-index:3;
-
 }
-.blank_bck
-{
-	width: 80%;
-	height: 100%;
-	position:absolute;	
-	top:0%;
-	left:18%;
-	z-index:0;
 
-}		
+.page2_white_bk
+{
+    position: absolute;
+    left: 56%;
+    top: -5%;
+    width: 0;
+    height: 120%;
+    background-color: rgba(255,255,255,0.7);
+    transform:rotate(7deg);
+}
 
 .page2_title
 {
