@@ -48,14 +48,29 @@ function page2_white_bk_animation(index)
     if(index == 1)
     {
         setTimeout(function(){
-            $("#page2_white_bk").css({
-                "left": "26%",
-                "width": "60%",
-                "transition-property":"width 1s linear 0s, left 1s linear 0s",
-                "-webkit-transition":"width 1s linear 0s, left 1s linear 0s",
-                "-moz-transition":"width 1s linear 0s, left 1s linear 0s",
-                "-o-transition":"width 1s linear 0s, left 1s linear 0s"});
+        $("#page2_white_bk").css({
+            "left": "26%",
+            "width": "60%",
+            "transition-property":"width 0.5s linear 0s, left 0.5s linear 0s",
+            "-webkit-transition":"width 0.5s linear 0s, left 0.5s linear 0s",
+            "-moz-transition":"width 0.5s linear 0s, left 0.5s linear 0s",
+            "-o-transition":"width 0.5s linear 0s, left 0.5s linear 0s"});
         }, 500);
+
+        setTimeout(function(){
+            $("#page2_white_flash").css({
+                "left": "86%",
+                "width":"10px",
+                "transition-property":"left 0.5s linear 0s",
+                "-webkit-transition":"left 0.5s linear 0s",
+                "-moz-transition":"left 0.5s linear 0s",
+                "-o-transition":"left 0.5s linear 0s"});
+        }, 1000);
+
+        setTimeout(function(){
+        $("#page2_white_flash").css({
+            "width":"0px"});
+        }, 1500);
     }
     else
     {
@@ -66,5 +81,15 @@ function page2_white_bk_animation(index)
             "-webkit-transition":"width 0s linear 0s, left 0s linear 0s",
             "-moz-transition":"width 0s linear 0s, left 0s linear 0s",
             "-o-transition":"width 0s linear 0s, left 0s linear 0s"});
+
+        setTimeout(function(){
+            $("#page2_white_flash").css({
+                "left": "26%",
+                "width":"0",
+                "transition-property":"left 0s linear 0s",
+                "-webkit-transition":"left 0s linear 0s",
+                "-moz-transition":"left 0s linear 0s",
+                "-o-transition":"left 0s linear 0s"});
+        }, 1000);
     }
 }

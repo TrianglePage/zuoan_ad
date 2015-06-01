@@ -146,6 +146,17 @@ body {
     transform:rotate(7deg);
 }
 
+.page2_white_flash
+{
+    position: absolute;
+    left: 26%;
+    top: -5%;
+    width: 0;
+    height: 120%;
+    background-color: rgba(255,255,255,1);
+    transform:rotate(7deg);
+}
+
 .page2_title
 {
 	font-size:20px;
