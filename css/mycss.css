@@ -333,6 +333,32 @@ body {
 	height:40%;
 	font-size:16px;
 	}
+/******************page3 end ***********************/
+
+/******************page4 start ***********************/
+.page4_left_top
+{
+	background-color:black;
+}
+
+.page4_right_top
+{
+	background-color:red;
+}
+.page4_left_bottom
+{
+	background-color:blue;
+}
+.page4_right_bottom
+{
+	background-color:yellow;
+}
+.page4_left_top,.page4_right_top, .page4_left_bottom, .page4_right_bottom
+{
+	border: solid 1px;width: 50%;height: 50%;float:left;
+}
+
+/******************page4 end ***********************/
 
 /************************** page5 start add by wk 2015-05031 *************************/
 .page5_up {
